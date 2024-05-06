@@ -88,20 +88,21 @@ class ShopingPage extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
         backgroundColor: Colors.amber,
-        icon: Icon(
+        icon: const Icon(
           Icons.add_shopping_cart_rounded,
           color: Colors.black,
         ),
         label: GetX<CartController>(
           builder: (controller) {
             return Text(controller.count.toString(),
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black,
                 fontSize: 24
               ),
             );
           }
-        )),
+        )
+        ),
     );
   }
 }
